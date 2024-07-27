@@ -1,5 +1,15 @@
 # Javascript
 
+## General
+1. weakely typed language.
+2. Object-oriented language.
+   1. has primitive and reference types.
+3. Versatile language (can be ran on many platforms i.e. Browsers, PC, servers, ...).
+
+## Object-Oriented
+1. In a Key-value pair key can also be called property or field.
+2. 
+
 ## Leetcode quizs
 
 1. [Create Hello World Function](https://leetcode.com/problems/create-hello-world-function/description/).
@@ -7,6 +17,9 @@
 ---
 
 ## Functions
+
+### General
+1. pure functions.
 
 ### 1. normal
 
