@@ -8,7 +8,6 @@
 
 ## Object-Oriented
 1. In a Key-value pair key can also be called property or field.
-2. 
 
 ## Leetcode quizs
 
@@ -131,6 +130,6 @@ console.log(f1(3, 4));
 
 3. Can't be bound to this, super, and arguments or be used as a constructor. These are all complex topics in themselves but the basic takeaway should be that arrow functions are simpler in their feature set.
 
-## needs research
-
+## Research
 1. IIFE and its benefits
+2. Factory functions.

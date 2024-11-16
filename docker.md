@@ -1,4 +1,11 @@
 # Docker
+# Basics
+## Isolation
+1. background
+   1. `chroot` (root jail) in linux.
+   2. `ulimit` for assiging quota from memory to every user.
+   3. `nice/renice` and assiging cpu power for proccesses.
+
 
 ## docker-cli Commands
 
