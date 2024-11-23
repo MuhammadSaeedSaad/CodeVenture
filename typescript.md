@@ -13,12 +13,19 @@ that tells me that if I need to use this class I need to implement a `compare` a
 ex1: in the sorting example better use abstract class `Sorter` to provide the sorting algorithm and the abstraction.
 ex2: for marking things on a map they have to be mappable. `Mappable` can be an interface.
 
-
 ## Enums
 1. Primary goal of using Enums is to signal to other engineers that these are all closely related values.
 2. Follows near-idential syntax rules as normal objects.
 3. Creates an object with the same keys and valeus when converted from TS to JS.
 4. Use whenever we have a small fixed set of values that are all closely related and know at compile time.
+
+## Composition vs. Inheritance
+| Composition | Inheritance |
+|-------------|-------------|
+| Has a | Is a |
+| more reusable | more rigid and straight forward |
+1. There is a huge misconception in the javascript community about around 'Favor object composition over class inheritance'.
+2. Concatinative composition or literal composition (composition as it is in dictionary. like composing) or multiple inheritance is very different than the composition design pattern.
 
 # Misc notes
 ## How to create an interface that matches any object
