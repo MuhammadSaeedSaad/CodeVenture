@@ -19,6 +19,59 @@ ex2: for marking things on a map they have to be mappable. `Mappable` can be an 
 3. Creates an object with the same keys and valeus when converted from TS to JS.
 4. Use whenever we have a small fixed set of values that are all closely related and know at compile time.
 
+## Generics
+### Type inference in generics
+```typescript
+class ArrayOfAnything<T> {
+    constructor(public collection: T[]) {}
+
+    get(index: number): T {
+        return this.collection[index];
+    }
+}
+
+const arr = new ArrayOfAnything(['a', 'b', 'c']); // type of arr is string[]
+```
+```typescript
+function printAnything<T>(arr: T[]): void {
+    for(let i=0; i < arr.length; i++) {
+        console.log(arr[i]);
+    }
+}
+
+// both below are equal
+printAnything<string>(['a', 'b', 'c']);
+printAnything(['a', 'b', 'c']);
+```
+
+### Generic Constraints
+```typescript
+class car {
+    print(): void {
+        console.log('I am a car');
+    }
+}
+
+class House {
+    print(): void {
+        console.log('I am a house');
+    }
+}
+
+interface Printable {
+    print(): void;
+}
+
+function printHousesOrCars<T extends Printable>(arr: T[]): void {
+    for(let i=0; i < arr.length;  i++) {
+        arr[i].print();
+    }
+}
+
+printHousesOrCars<House>([new House(), new House()]); // func definition with 'extends' like above or you will get error here
+printHousesOrCars<Car>([new Car(), new Car()]);
+```
+
 ## Composition vs. Inheritance
 | Composition | Inheritance |
 |-------------|-------------|
