@@ -81,6 +81,26 @@ printHousesOrCars<Car>([new Car(), new Car()]);
 2. Concatinative composition or literal composition (composition as it is in dictionary. like composing) or multiple inheritance is very different than the composition design pattern.
 
 # Misc notes
+## Weird type annotations
+1. define a type for a callback.
+```typescript
+type Callback = () => {} // this is the type for a function
+
+on(eventName: string, callback: Callback) {
+        
+}
+```
+2. When the properties of an object is unknown.
+```typescript
+const someObject: { [key: string]: string[] }
+```
+
+1. Ensure correct assignment
+```typescript
+// someObject: string[] || undefined
+const someArray = someObject || [];
+```
+
 ## How to create an interface that matches any object
 ```Typescript
 interface ClassConstructor {
