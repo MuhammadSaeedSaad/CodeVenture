@@ -1,5 +1,13 @@
 # Typescript
 
+## Type annotations
+### Union types
+Union types imposes restrictions on the properties and the methods that can be accessed on a variable. It makes only the properties and methods common between the united types available
+```typescript
+// any method or property related to type string and not existant on type number will not be available on x and vice versa
+const x: string | number;
+```
+
 ## interface
 1. The power of interface is that it acts like a gate keeper for a specific function or class.
 2. Another important aspect is that interfaces provide a level of abstraction or high-level understanding of a certain class. </br>
@@ -82,7 +90,7 @@ printHousesOrCars<Car>([new Car(), new Car()]);
 
 ### Resouces
 1. [Composition vs Inheritance](https://dev.to/hassam7/composition-vs-inheritance-4oo2) daily.dev.
-# Misc notes
+
 ## Weird type annotations
 1. define a type for a callback.
 ```typescript
@@ -97,6 +105,12 @@ on(eventName: string, callback: Callback) {
 const someObject: { [key: string]: string[] }
 ```
 
+# tsconfig.json 
+## properties
+1. strict </br>
+it affacts the how typescript behaves with optional parameters.
+
+# Misc notes
 1. Ensure correct assignment
 ```typescript
 // someObject: string[] || undefined
