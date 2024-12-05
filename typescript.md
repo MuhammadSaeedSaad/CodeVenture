@@ -1,6 +1,9 @@
 # Typescript
 
 ## Type annotations
+1. In Typescript, strings can be types.
+2. In JS (and therefore TS), all object keys are strings.
+
 ### Union types
 Union types imposes restrictions on the properties and the methods that can be accessed on a variable. It makes only the properties and methods common between the united types available
 ```typescript
