@@ -90,6 +90,7 @@ printHousesOrCars<Car>([new Car(), new Car()]);
 | more reusable | more rigid and straight forward |
 1. There is a huge misconception in the javascript community about around 'Favor object composition over class inheritance'.
 2. Concatinative composition or literal composition (composition as it is in dictionary. like composing) or multiple inheritance is very different than the composition design pattern.
+3. Composition is about delegation.
 
 ### Resouces
 1. [Composition vs Inheritance](https://dev.to/hassam7/composition-vs-inheritance-4oo2) daily.dev.
