@@ -95,6 +95,9 @@ printHousesOrCars<Car>([new Car(), new Car()]);
 ### Resouces
 1. [Composition vs Inheritance](https://dev.to/hassam7/composition-vs-inheritance-4oo2) daily.dev.
 
+## Classes and OOP
+1. Accessors like `get` can be very useful when delegating the methods of a composing member of a class.
+
 ## Weird type annotations
 1. define a type for a callback.
 ```typescript
